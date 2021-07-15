@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestVagrantSuite]">
+  <test thread-count="5" name="TestVagrantTests(failed)">
+    <classes>
+      <class name="com.TestVagrant.Tests.TestVagrantTest">
+        <methods>
+          <include name="testVagrantTestCase"/>
+          <include name="shutDown"/>
+        </methods>
+      </class> <!-- com.TestVagrant.Tests.TestVagrantTest -->
+    </classes>
+  </test> <!-- TestVagrantTests(failed) -->
+</suite> <!-- Failed suite [TestVagrantSuite] -->
