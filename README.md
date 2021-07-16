@@ -7,7 +7,9 @@ In order to run this utility run testng.xml or pom.xml
 The results can be viewed test-output/Report/test/TestVagrantTest.html
 
 How to use this utility?
-You can configure the acceptable range of difference between weather parameters of api and UI in application.properties with value against each one
+You can configure the acceptable range of difference between weather parameters of api and UI in application.properties with value against each one.
+
+The utility will automatically calculate whether the variance is good enough or not based on the values specified in application.properties
 
 Configuration
 Environment - Windows 10
