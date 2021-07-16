@@ -5,7 +5,7 @@ This small utility compares UI result of weather of Bengaluru city from accuweat
 How to run?
 In order to run this utility run testng.xml or pom.xml
 
-The results can be viewed test-output/Report/test/TestVagrantTest.html
+The results can be viewed in test-output/Report/test/TestVagrantTest.html
 
 How to use this utility?
 You can configure the acceptable range of difference between weather parameters of api and UI in application.properties with value against each one.
