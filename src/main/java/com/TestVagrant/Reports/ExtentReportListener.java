@@ -48,8 +48,8 @@ public class ExtentReportListener implements ITestListener{
 
 		test = reports.startTest(result.getMethod().getMethodName());
 		test.log(LogStatus.INFO, result.getMethod().getMethodName());
-		System.out.println(result.getTestClass().getTestName());
-		System.out.println(result.getMethod().getMethodName());
+//		System.out.println(result.getTestClass().getTestName());
+//		System.out.println(result.getMethod().getMethodName());
 	}
 
 	public void onTestSuccess(ITestResult result) {

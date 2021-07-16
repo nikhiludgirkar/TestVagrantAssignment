@@ -27,42 +27,46 @@ public class PerformWeatherDataComparison extends ExtentReportListener {
 			int restData=restServiceWeatherData.get(key);
 			
 			if (key.equalsIgnoreCase("temperature")) {
-				if (uiData-restData<=Integer.parseInt(acceptableTempDiff)) {
+				if (restData-uiData<=Integer.parseInt(acceptableTempDiff)) {
 					test.log(LogStatus.PASS, "The difference between temperature in Celsius on UI and Rest service is within acceptable range");
+					testResultFlag=true;
 				}
 				else {
 					test.log(LogStatus.FAIL, "There is Temperature variance between Accuweather UI and OpenWeather API in Celsius");
-					test.log(LogStatus.INFO, "UI Temp in Celsius on UI="+uiData+", Rest Temp= "+restData+" Difference is "+(uiData-restData)+" acceptable is "+acceptableTempDiff);
+					test.log(LogStatus.INFO, "UI Temp in Celsius on UI="+uiData+", Rest Temp= "+restData+" Difference is "+(restData-uiData)+" acceptable is "+acceptableTempDiff);
 					testResultFlag=false;
 				}
 			}
 			if (key.equalsIgnoreCase("humidity")) {
-				if (uiData-restData<=Integer.parseInt(acceptableHumidityDiff)) {
+				if (restData-uiData<=Integer.parseInt(acceptableHumidityDiff)) {
 					test.log(LogStatus.PASS, "The difference between humidity percentage on UI and Rest service is within acceptable range");
+					testResultFlag=true;
 				}
 				else {
 					test.log(LogStatus.FAIL, "There is Humidity variance between Accuweather UI and OpenWeather API in percentage");
-					test.log(LogStatus.INFO, "Humidity in % on UI="+uiData+", Rest Humidity= "+restData+" Difference is "+(uiData-restData)+" acceptable is "+acceptableHumidityDiff);
+					test.log(LogStatus.INFO, "Humidity in % on UI="+uiData+", Rest Humidity= "+restData+" Difference is "+(restData-uiData)+" acceptable is "+acceptableHumidityDiff);
 					testResultFlag=false;
 				}
 			}
 			if (key.equalsIgnoreCase("pressure")) {
-				if (uiData-restData<=Integer.parseInt(acceptablePressureDiff)) {
+				if (restData-uiData<=Integer.parseInt(acceptablePressureDiff)) {
 					test.log(LogStatus.PASS, "The difference between Pressure in MB on UI and Rest service is within acceptable range");
+					testResultFlag=true;
 				}
 				else {
 					test.log(LogStatus.FAIL, "There is Pressure variance between Accuweather UI and OpenWeather API in MiiliBars (Mb)");
-					test.log(LogStatus.INFO, "Pressure in MB on UI="+uiData+", Rest pressure= "+restData+" Difference is "+(uiData-restData)+" acceptable is "+acceptablePressureDiff);
+					test.log(LogStatus.INFO, "Pressure in MB on UI="+uiData+", Rest pressure= "+restData+" Difference is "+(restData-uiData)+" acceptable is "+acceptablePressureDiff);
 					testResultFlag=false;
 				}
 			}
 			if (key.equalsIgnoreCase("visibility")) {
-				if (uiData-restData<=Integer.parseInt(acceptablevisibilityDiff)) {
+				if (restData-uiData<=Integer.parseInt(acceptablevisibilityDiff)) {
 					test.log(LogStatus.PASS, "The difference between Visibility in KM on UI and Rest service is within acceptable range");
+					testResultFlag=true;
 				}
 				else {
 					test.log(LogStatus.FAIL, "There is Visibility variance between Accuweather UI and OpenWeather API in KMs");
-					test.log(LogStatus.INFO, "Visibility in KM on UI="+uiData+" Rest visibility= "+restData+" Difference is "+(uiData-restData)+" acceptable is "+acceptablevisibilityDiff);
+					test.log(LogStatus.INFO, "Visibility in KM on UI="+uiData+" Rest visibility= "+restData+" Difference is "+(restData-uiData)+" acceptable is "+acceptablevisibilityDiff);
 					testResultFlag=false;
 				}
 			}

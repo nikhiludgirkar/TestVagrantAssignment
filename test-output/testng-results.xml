@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="TestVagrantSuite" duration-ms="61031" started-at="2021-07-15T20:52:59Z" finished-at="2021-07-15T20:54:00Z">
+  <suite name="TestVagrantSuite" duration-ms="85180" started-at="2021-07-16T06:35:44Z" finished-at="2021-07-16T06:37:09Z">
     <groups>
     </groups>
-    <test name="TestVagrantTests" duration-ms="61031" started-at="2021-07-15T20:52:59Z" finished-at="2021-07-15T20:54:00Z">
+    <test name="TestVagrantTests" duration-ms="85180" started-at="2021-07-16T06:35:44Z" finished-at="2021-07-16T06:37:09Z">
       <class name="com.TestVagrant.Tests.TestVagrantTest">
-        <test-method status="FAIL" signature="testVagrantTestCase()[pri:0, instance:com.TestVagrant.Tests.TestVagrantTest@69ea3742]" name="testVagrantTestCase" duration-ms="59598" started-at="2021-07-15T20:52:59Z" finished-at="2021-07-15T20:53:59Z">
+        <test-method status="FAIL" signature="testVagrantTestCase()[pri:0, instance:com.TestVagrant.Tests.TestVagrantTest@69ea3742]" name="testVagrantTestCase" duration-ms="83108" started-at="2021-07-16T06:35:44Z" finished-at="2021-07-16T06:37:07Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Since some Weather parameters did not match the test is failed]]>
@@ -15,7 +15,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Since some Weather parameters did not match the test is failed
 at org.testng.Assert.fail(Assert.java:96)
-at com.TestVagrant.Util.PerformWeatherDataComparison.compare(PerformWeatherDataComparison.java:71)
+at com.TestVagrant.Util.PerformWeatherDataComparison.compare(PerformWeatherDataComparison.java:75)
 at com.TestVagrant.Tests.TestVagrantTest.testVagrantTestCase(TestVagrantTest.java:30)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -48,7 +48,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVagrantTestCase -->
-        <test-method status="PASS" signature="shutDown()[pri:0, instance:com.TestVagrant.Tests.TestVagrantTest@69ea3742]" name="shutDown" is-config="true" duration-ms="937" started-at="2021-07-15T20:53:59Z" finished-at="2021-07-15T20:54:00Z">
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:com.TestVagrant.Tests.TestVagrantTest@69ea3742]" name="shutDown" is-config="true" duration-ms="1645" started-at="2021-07-16T06:37:07Z" finished-at="2021-07-16T06:37:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDown -->
